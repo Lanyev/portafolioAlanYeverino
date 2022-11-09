@@ -51,7 +51,7 @@
 
 @media (min-width: 768px) {
   :root {
-    --header-height: 90px;
+    --header-height: 70px;
     --big-font-size: 38px;
     --normal-font-size: 18px;
     --small-font-size: 16px;
@@ -72,9 +72,13 @@ html {
 }
 
 body {
+  background: linear-gradient(87deg, #d0b886, #e1d0a0, #8a8478, #504737);
+  background-size: 240% 240%;
+  animation: gradient-animation 12s ease infinite;
+  margin: 0;
+  padding: 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  margin: 0;
 }
 
 ul {
@@ -116,10 +120,13 @@ img {
   border-radius: 5px;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
+  background: #504737;
+  color: #d0b886;
 }
 
 .btn--primary {
-  background-color: #e0e0e0;
+  color: #d0b886;
+  background-color: #504737;
 }
 
 .btn:hover {
@@ -132,7 +139,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #fff;
+  background-color: #504737;
   box-shadow: var(--box-shadow);
   z-index: var(--z-fixed);
 }
@@ -151,7 +158,7 @@ img {
     left: 0;
     width: 100%;
     border-radius: 0 0 12px 12px;
-    background-color: #fff;
+    background-color: #504737;
     box-shadow: 0px 1px 9px 2px #00000024;
     padding: 4.5rem 1rem 2rem;
     transition: 0.5s;
@@ -163,7 +170,7 @@ img {
   align-items: center;
   column-gap: 0.25rem;
   font-weight: var(--font-semi-bold);
-  color: #111;
+  color: #d0b886;
 }
 
 .btn__close {
@@ -184,11 +191,11 @@ img {
 .btn__close,
 .navbar__logo i {
   font-size: 2.2rem;
-  color: #111;
+  color: #d0b886;
 }
 
 .btn__close:hover {
-  background-color: #eee;
+  background-color: #d0b886;
 }
 
 .navbar__list {
@@ -202,7 +209,7 @@ img {
 }
 
 .navbar__link {
-  color: #111;
+  color: #d0b886;
   font-size: 1.2rem;
   font-weight: var(--font-semi-bold);
 }
@@ -213,21 +220,11 @@ img {
 
 /* ============= Home ============= */
 .home {
-  background: linear-gradient(300deg, #e3d8a0, #766d44, #36311d);
+  /* background: linear-gradient(260deg, #e6b325, #bf9742, #61481c);
   background-size: 180% 180%;
-  animation: gradient-animation 11s ease infinite;
+  animation: gradient-animation 6s ease infinite; */
 }
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
+
 .home__container {
   position: relative;
   row-gap: 2rem;
@@ -250,7 +247,7 @@ img {
 }
 
 .home__social-link {
-  color: #777;
+  color: #111;
   font-size: 1.7rem;
   transition: color 0.3s;
 }
@@ -276,7 +273,9 @@ img {
 
 /* ============= About ============= */
 .about {
-  background-color: #fafafa;
+  /* background: linear-gradient(77deg, #bf9742, #9b7021, #ba9345);
+  background-size: 180% 180%;
+  animation: gradient-animation 9s ease infinite; */
 }
 
 .about__description {
@@ -291,35 +290,44 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
   gap: 2rem;
+  color: #d0b886;
 }
 
 .about__card {
-  background-color: #fff;
+  background-color: #504737;
   padding: 4rem 2rem 2rem;
   border-radius: 5px;
   box-shadow: var(--box-shadow);
 }
 
 .about__card .bx {
-  padding: 12px;
+  padding: 5px;
   font-size: 2rem;
   border-radius: 50%;
-  background-color: #f0f0f0;
+  background-color: #504737;
 }
 
 .about__tags-container {
   display: flex;
+  justify-items: auto;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
 .about__tag {
-  display: inline-block;
+  display: grid;
   padding: 0.75rem 1.5rem;
   font-weight: var(--font-semi-bold);
   font-size: var(--smaller-font-size);
-  background-color: #f0f0f0;
+  color: #d0b886;
+  background-color: #504737;
   border-radius: 5px;
+}
+
+a {
+  font-weight: var(--font-semi-bold);
+  font-size: var(--small-font-size);
+  color: #d0b886;
 }
 
 /* ============= Projects ============= */
@@ -357,11 +365,13 @@ img {
 .projects__button {
   padding: 0.75rem 1.5rem;
   font-size: var(--smaller-font-size);
+  background: #504737;
+  color: #d0b886;
 }
 
 /* ============= Contact ============= */
 .contact {
-  background-color: #f5f5f5;
+  background-color: #504737;
 }
 
 .contact__container {
@@ -379,7 +389,7 @@ img {
 .contact__form {
   width: 100%;
   padding: 3rem 1.5rem 2rem;
-  background-color: #fff;
+  background-color: #8a8478;
   border-radius: 5px;
   margin: 0 auto;
 }
@@ -400,13 +410,13 @@ img {
   font-weight: var(--font-semi-bold);
   border-radius: 5px;
   background-color: #ebebeb;
-  border: 1px solid #f0f0f0;
+  border: 1px solid #d0b886;
 }
 
 /* ============= Footer ============= */
 .footer {
   background-color: #111;
-  color: #efefef;
+  color: #d0b886;
   padding-bottom: 2rem;
 }
 
@@ -425,7 +435,7 @@ img {
 }
 
 .footer__social-link {
-  color: #fff;
+  color: #d0b886;
 }
 
 .footer__copy {
@@ -551,5 +561,16 @@ img {
 @media (min-width: 1024px) {
   .grid--container {
     margin: 0 auto;
+  }
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
