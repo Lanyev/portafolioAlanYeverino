@@ -271,6 +271,16 @@ img {
   text-align: center;
 }
 
+.fade-in {
+  -webkit-animation: fade-in 2s ease;
+  -moz-animation: fade-in ease-in-out 2s both;
+  -ms-animation: fade-in ease-in-out 2s both;
+  -o-animation: fade-in ease-in-out 2s both;
+  animation: fade-in 2s ease;
+  visibility: visible;
+  -webkit-backface-visibility: hidden;
+}
+
 /* ============= About ============= */
 .about {
   /* background: linear-gradient(77deg, #bf9742, #9b7021, #ba9345);
@@ -572,5 +582,38 @@ a {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

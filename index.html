@@ -20,6 +20,12 @@
     <title>Portafolio</title>
 
     <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- jQuery -->
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"
+    ></script>
+    <script src="assets/js/image.js"></script>
   </head>
 
   <body>
@@ -55,9 +61,9 @@
     <main>
       <section id="home" class="home">
         <div class="home__container grid--container">
-          <div class="home__image">
+          <div id="banner-load" class="home__image">
             <span></span>
-            <img src="assets/img/profile.png" alt="profile photo" />
+            <!-- <img class="alan_image" src="assets/img/alanCard0.png" alt="" /> -->
           </div>
 
           <ul class="home__social">
@@ -377,6 +383,19 @@
       btnClose.onclick = function () {
         Menu.classList.remove("show--menu");
       };
+    </script>
+    <script>
+      var images = [
+        "alanCard0.png",
+        "alanCard1.png",
+        "alanCard2.png",
+        "alanCard3.png",
+      ];
+      $(
+        '<img class="fade-in" src="assets/img' +
+          images[Math.floor(Math.random() * images.length)] +
+          '">'
+      ).appendTo("#banner-load");
     </script>
   </body>
 </html>
