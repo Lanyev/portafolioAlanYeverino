@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
 
@@ -32,8 +32,10 @@
     <header class="header">
       <nav class="navbar grid--container">
         <a class="navbar__logo" href="#"
-          ><i class="bx bxs-user-circle"></i> Alan Yeverino</a
-        >
+          ><i class="bx bx-collapse-horizontal"></i>Lanyev<i
+            class="bx bx-collapse-horizontal"
+          ></i
+        ></a>
 
         <div class="navbar__menu">
           <i class="bx bx-x btn__close navbar__icon"></i>
@@ -46,7 +48,7 @@
               <a class="navbar__link" href="#about">Acerca de Mí</a>
             </li>
             <li class="navbar__item">
-              <a class="navbar__link" href="#projects">Portafolio</a>
+              <a class="navbar__link" href="#projects">Proyectos</a>
             </li>
             <li class="navbar__item">
               <a class="navbar__link" href="#contact">Contacto</a>
@@ -68,27 +70,36 @@
 
           <ul class="home__social">
             <li class="home__social-item">
-              <a class="home__social-link" href="#"
+              <a
+                class="home__social-link"
+                href="https://www.linkedin.com/in/alan-yeverino-1b160754/"
+                target="_blank"
                 ><i class="bx bxl-linkedin"></i
               ></a>
             </li>
             <li class="home__social-item">
-              <a class="home__social-link" href="#"
+              <a
+                class="home__social-link"
+                href="https://www.instagram.com/lanyevz/"
+                target="_blank"
                 ><i class="bx bxl-instagram"></i
               ></a>
             </li>
             <li class="home__social-item">
-              <a class="home__social-link" href="#"
+              <a
+                class="home__social-link"
+                href="https://www.facebook.com/Lanyev"
+                target="_blank"
                 ><i class="bx bxl-facebook"></i
               ></a>
             </li>
           </ul>
 
           <div class="home__info">
-            <h1 class="home__title">Hola, soy Alan Yeverino</h1>
+            <h1 class="home__title">Alan Yeverino</h1>
             <p class="home__description">
-              Soy desarrollador web, machine learning enthusiastic y admirador
-              de las nuevas y antiguas tecnologias.
+              Soy estudiante de desarrollo web, machine learning enthusiastic y
+              admirador de las nuevas y antiguas tecnologias.
             </p>
           </div>
 
@@ -102,15 +113,12 @@
         </div>
       </section>
 
-      <section id="about" class="about-section">
-        <h2 class="section__title">Acerca de Mí</h2>
-
+      <section id="about" class="about section">
         <div class="about__container grid--container">
+          <h2 class="section__title">Acerca de Mí</h2>
           <p class="about__description">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
-            incidunt aut distinctio maxime recusandae. Velit exercitationem
-            ducimus cupiditate corrupti eveniet soluta accusamus quasi,
-            suscipit, vitae optio, officiis rerum cumque numquam.
+            Mi nombre es Alan Yeverino, tengo 35 años y actualmente estoy
+            estudiando en Academlo Full Stack Web Developer.
           </p>
 
           <div class="about__skills grid--container">
@@ -120,28 +128,34 @@
                 <i class="bx bxl-html5"></i>
 
                 <h3 class="about__card-title">HTML5</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p>
+                  El esqueleto de una pagina y mi primer paso en el mundo de la
+                  programacion web.
+                </p>
               </div>
               <!--Card 2 -->
               <div class="about__card">
                 <i class="bx bxl-css3"></i>
 
                 <h3 class="about__card-title">CSS3</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p>Embellecimiento de la pagina.</p>
               </div>
               <!--Card 3 -->
               <div class="about__card">
                 <i class="bx bxl-javascript"></i>
 
                 <h3 class="about__card-title">JavaScript</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p>Comprendiendo y analizando el lenguaje de JavaScript.</p>
               </div>
               <!--Card 4 -->
               <div class="about__card">
                 <i class="bx bx-images"></i>
 
-                <h3 class="about__card-title">Stabled Diffusion</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <h3 class="about__card-title">Stable Diffusion</h3>
+                <p>
+                  Creacion de imagenes por medio de texto usando la tecnologia
+                  de Stable Diffusion.
+                </p>
               </div>
             </div>
 
@@ -155,7 +169,6 @@
                 <span class="about__tag">Proactivo</span>
                 <span class="about__tag">Autodidacta</span>
                 <span class="about__tag">Proactivo</span>
-                <span class="about__tag">Inovacion</span>
               </div>
             </div>
           </div>
@@ -169,21 +182,29 @@
           <div class="projects__project">
             <div class="projects__inner grid--container">
               <div class="projects__image">
-                <img src="assets/img/project1.jpg" alt="project 1" />
+                <img src="assets/img/project1.png" alt="project 1" />
               </div>
 
               <div class="projects__info">
-                <h3 class="projects__name">Proyecto 1</h3>
+                <h3 class="projects__name">QR Code from CodeMentor</h3>
                 <p class="projects__description">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Uno de mis primeros trabjos al aprender HTML y CSS.
                 </p>
 
                 <div class="projects__buttons">
                   <button class="btn projects__button" type="button">
-                    VER DEMO
+                    <a
+                      href="https://lanyev.github.io/qr_code_component/"
+                      target="_blank"
+                      >VER DEMO</a
+                    >
                   </button>
                   <button class="btn projects__button" type="button">
-                    VER CÓDIGO
+                    <a
+                      href="https://github.com/Lanyev/qr_code_component"
+                      target="_blank"
+                      >VER CODIGO</a
+                    >
                   </button>
                 </div>
               </div>
@@ -197,17 +218,21 @@
               </div>
 
               <div class="projects__info">
-                <h3 class="projects__name">Proyecto 2</h3>
-                <p class="projects__description">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
+                <h3 class="projects__name">Blog</h3>
+                <p class="projects__description">Maqueta de un Blog</p>
 
                 <div class="projects__buttons">
                   <button class="btn projects__button" type="button">
-                    VER DEMO
+                    <a
+                      href="https://alan-first-attempt-of-cv.netlify.app/"
+                      target="_blank"
+                      >VER DEMO</a
+                    >
                   </button>
                   <button class="btn projects__button" type="button">
-                    VER CÓDIGO
+                    <a href="https://github.com/Lanyev/cv.0.1" target="_blank"
+                      >VER CÓDIGO</a
+                    >
                   </button>
                 </div>
               </div>
@@ -217,21 +242,23 @@
           <div class="projects__project">
             <div class="projects__inner grid--container">
               <div class="projects__image">
-                <img src="assets/img/project3.jpg" alt="project 1" />
+                <img src="assets/img/project3.png" alt="project 1" />
               </div>
 
               <div class="projects__info">
-                <h3 class="projects__name">Proyecto 3</h3>
-                <p class="projects__description">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
+                <h3 class="projects__name">CV</h3>
+                <p class="projects__description">CV en formato elegante</p>
 
                 <div class="projects__buttons">
                   <button class="btn projects__button" type="button">
-                    VER DEMO
+                    <a href="https://lanyev.github.io/CV-2.0/" target="_blank"
+                      >VER DEMO</a
+                    >
                   </button>
                   <button class="btn projects__button" type="button">
-                    VER CÓDIGO
+                    <a href="https://github.com/Lanyev/CV-2.0" target="_blank"
+                      >VER CÓDIGO</a
+                    >
                   </button>
                 </div>
               </div>
@@ -245,17 +272,23 @@
               </div>
 
               <div class="projects__info">
-                <h3 class="projects__name">Proyecto 4</h3>
+                <h3 class="projects__name">TinDog</h3>
                 <p class="projects__description">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Maquetacion de una pagina web para citas entre perros.
                 </p>
 
                 <div class="projects__buttons">
                   <button class="btn projects__button" type="button">
-                    VER DEMO
+                    <a
+                      href="https://jolly-clafoutis-43a625.netlify.app/"
+                      target="_blank"
+                      >VER DEMO</a
+                    >
                   </button>
                   <button class="btn projects__button" type="button">
-                    VER CÓDIGO
+                    <a href="https://github.com/Lanyev/tinDog" target="_blank"
+                      >VER CÓDIGO</a
+                    >
                   </button>
                 </div>
               </div>
@@ -271,28 +304,34 @@
           <div class="contact__info">
             <h3 class="contact__info-title">Información de contacto</h3>
             <p class="contact__info-description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Si tienes alguna duda puedes mandarme un mensaje.
             </p>
 
             <address class="contatc__info-data">
               <div class="contact__info-item">
                 <i class="bx bx-phone"></i>
 
-                <span class="contact__info-nomber"> +00 123 456 7890 </span>
+                <span class="contact__info-nomber"> +52 656 3655569 </span>
               </div>
 
               <div class="contact__info-item">
                 <i class="bx bxs-envelope"></i>
 
                 <span class="contact__info-mail">
-                  <a href="mailto:test@correo.com"> test@correo.com </a>
+                  <a href="mailto:test@correo.com"> lanyev@outlook.com </a>
                 </span>
               </div>
 
               <div class="contact__info-item">
                 <i class="bx bx-map"></i>
 
-                <span class="contact__info-map"> Bogotá, Colombia. </span>
+                <span class="contact__info-map">
+                  <a
+                    href="https://www.google.com/maps/place/Cd+Ju%C3%A1rez,+Chih./data=!4m2!3m1!1s0x86e75ecb3d0b329d:0xb196100549c7974?sa=X&ved=2ahUKEwjB0pSo-qL7AhWvgGoFHfhNBMYQ8gF6BAgYEAE"
+                    target="_blank"
+                    >Cd. Juarez Chihuahua.
+                  </a>
+                </span>
               </div>
             </address>
           </div>
@@ -334,7 +373,9 @@
       <div class="footer__container grid--container">
         <div class="footer__info">
           <h3 class="footer__title">Alan Yeverino</h3>
-          <p class="footer__description">Soy Desarrollador Web</p>
+          <p class="footer__description">
+            Visitame en mis redes sociales ====>>>>>
+          </p>
         </div>
 
         <div class="footer__social">
@@ -342,25 +383,37 @@
 
           <ul class="footer__socail-list">
             <li class="footer__social-item">
-              <a class="footer__social-link" href="#"
+              <a
+                class="footer__social-link"
+                href="https://www.facebook.com/Lanyev"
+                target="_blank"
                 ><i class="bx bxl-facebook"></i
               ></a>
             </li>
 
             <li class="footer__social-item">
-              <a class="footer__social-link" href="#"
+              <a
+                class="footer__social-link"
+                href="https://www.instagram.com/lanyevz/"
+                target="_blank"
                 ><i class="bx bxl-instagram"></i
               ></a>
             </li>
 
             <li class="footer__social-item">
-              <a class="footer__social-link" href="#"
+              <a
+                class="footer__social-link"
+                href="https://twitter.com/Lanyev"
+                target="_blank"
                 ><i class="bx bxl-twitter"></i
               ></a>
             </li>
 
             <li class="footer__social-item">
-              <a class="footer__social-link" href="#"
+              <a
+                class="footer__social-link"
+                href="https://www.linkedin.com/in/alan-yeverino-1b160754/"
+                target="_blank"
                 ><i class="bx bxl-linkedin"></i
               ></a>
             </li>
