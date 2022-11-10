@@ -385,17 +385,17 @@
       };
     </script>
     <script>
-      var images = [
+      const images = [
         "alanCard0.png",
         "alanCard1.png",
         "alanCard2.png",
         "alanCard3.png",
       ];
       $(
-        '<img class="fade-in" src="assets/img' +
+        '<img class="fade-in" src="assets/img/' +
           images[Math.floor(Math.random() * images.length)] +
           '">'
-      ).appendTo("#banner-load");
+      ).appendTo($("#banner-load"));
     </script>
   </body>
 </html>
