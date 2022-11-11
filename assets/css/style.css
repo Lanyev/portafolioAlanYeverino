@@ -289,7 +289,7 @@ img {
 /* ============= About ============= */
 .about {
   padding-top: 3rem;
-  min-width: 100vh;
+  min-width: 50vh;
   display: flex;
   align-items: center;
 }
